@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Yummy Cheese</h2>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+    </tr>
+    {% for c in cheese_list %}
+        <tr>
+            <td><a href="{% url 'details' id=c.id %}">{{ c.cheesename }}</a></td>
+            <td>{{ c.cheesetype }}</td>
+        </tr>
+
+    {% endfor %}
+
+</table>
+
+{% endblock %}
