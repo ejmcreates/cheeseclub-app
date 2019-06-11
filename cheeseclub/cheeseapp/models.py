@@ -17,7 +17,7 @@ class Cheese(models.Model):
     cheesename=models.CharField(max_length=255)
     cheesetype=models.ForeignKey(CheeseType, on_delete=models.DO_NOTHING)
     user=models.ForeignKey(User, on_delete=models.DO_NOTHING)
-    cheeseentrydate=models.DateField() 
+    cheeseentrydate=models.DateField(null=True, blank=True) 
     cheesedesc=models.TextField()
     cheeseprice=models.DecimalField(max_digits=10, decimal_places=2)
 
@@ -47,7 +47,7 @@ class Resource(models.Model):
     resourcename=models.CharField(max_length=255)
     resourcetype=models.CharField(max_length=255) 
     url=models.URLField(null=True, blank=True)
-    dateentered=models.DateField()
+    dateentered=models.DateField(null=True, blank=True)
     userid=models.ForeignKey(User, on_delete=models.DO_NOTHING)
     description=models.TextField()
 
