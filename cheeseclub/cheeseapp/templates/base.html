@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tech Reviews</title>
+        <title>Cheese Club</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -20,7 +20,11 @@
                 <ul class="nav navbar-nav">
                    <li><a href="{% url 'types' %}">Cheese Types</a></li>
                    <li><a href="{% url 'cheese' %}">Our Cheeses</a></li>
-               
+                   <li><a href="{% url 'resource' %}">Cheese Resources</a></li>
+                   <li><a href="{% url 'newcheese' %}">Add a Cheese</a></li>
+                   <li><a href="{% url 'newresource' %}">Add a Resource</a></li>
+                   <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
                 </ul>
                 </div>
                 </nav>
